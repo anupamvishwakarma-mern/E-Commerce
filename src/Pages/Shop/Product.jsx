@@ -8,16 +8,17 @@ import { RelatedProducts } from "../../Components/RelatedProducts/RelatedProduct
 
 
 export const Product = () => {
-  const { all_product } = useCustom()
+
+  const data = JSON.parse(localStorage.getItem('data'));
   const { productId } = useParams();
-  const product = all_product.find((e) => e.id === Number(productId))
+  const product = data.find((e) => e._id === productId)
 
   return (
     <div>
       <Breadcrum product={product} />
       <ProductDisplay product={product} />
       <DescriptionBox />
-      <RelatedProducts />
+      <RelatedProducts product={product} />
     </div>
   );
 };

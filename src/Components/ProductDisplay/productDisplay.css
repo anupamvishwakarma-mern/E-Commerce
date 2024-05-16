@@ -7,8 +7,11 @@
 .productdisplay-left{
   display: flex;
   gap: 17px;
-  justify-content: center;
+  justify-content: start;
   margin: 0px auto;
+}
+.productdisplay-img{
+  width: 100%;
 }
 .productdisplay-img-list{
   display: flex;

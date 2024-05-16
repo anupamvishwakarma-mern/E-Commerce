@@ -7,6 +7,7 @@
   align-items: center;
   margin-top: 50px;
 }
+
 .popular h1{
   color: #171717;
   font-size: 40px;
@@ -22,7 +23,7 @@
   margin-top: 30px;
   display: flex;
   width: 100%;
-  justify-content: center;
+  justify-content: start;
 }
 @media screen and (max-width: 767px) {
   .popular{

@@ -1,11 +1,20 @@
-.item{
-  margin: auto;
+.item-container{
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+  height: 100%;
+  padding-bottom: 10px;
 }
 .item p{
   margin: 6px 0px;
 }
 .item img{
   width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 70%;
+}
+.item-container-2{
+  max-height: 20%;
 }
 .item-prices{
   display: flex;
